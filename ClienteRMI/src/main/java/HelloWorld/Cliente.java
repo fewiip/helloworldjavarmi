@@ -28,7 +28,8 @@ public class Cliente {
             */
             InterfaceServ referenciaServidor = (InterfaceServ) referenciaServicoNomes.lookup("HelloWorld");
             CliImpl serventeCliente = new CliImpl(referenciaServidor);
-            System.out.println("fim!");
+            
+            //o programa fica rodando pra sempre mesmo não tendo um while(true)
         } catch(Exception e){
             e.printStackTrace();
         }

@@ -25,7 +25,7 @@ public class Servidor {
             InterfaceServ referenciaServidor = new ServImpl();
             referenciaServicoNomes.rebind("HelloWorld", referenciaServidor);
             
-            
+            //o programa fica rodando pra sempre mesmo não tendo um while(true)
         }catch(Exception e){
             e.printStackTrace();
         }
